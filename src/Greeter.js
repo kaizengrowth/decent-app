@@ -7,3 +7,5 @@ class Greeter {
     return this.greeting;
   }
 }
+
+module.exports = Greeter;
