@@ -1,0 +1,9 @@
+{
+  "name": "everywhere.js",
+  "version": "0.1.0",
+  "description": "decent's official boilerplate for web applications.",
+  "main": "index.js",
+  "repository": "https://github.com/decentorganization/everywhere.js.git",
+  "author": "Parker McCurley <parker@decentcrypto.com>",
+  "license": "MIT"
+}
