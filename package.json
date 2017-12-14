@@ -8,13 +8,16 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && jest --coverage"
+    "test": "eslint src && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.13.1",
+    "husky": "^0.14.3",
     "jest": "^21.2.1"
   }
 }
