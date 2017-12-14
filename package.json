@@ -8,11 +8,13 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src"
+    "test": "eslint src && jest --coverage"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^4.13.1"
+    "eslint": "^4.13.1",
+    "jest": "^21.2.1"
   }
 }
