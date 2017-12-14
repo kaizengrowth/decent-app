@@ -7,10 +7,12 @@
   "author": "Parker McCurley <parker@decentcrypto.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src"
+    "start": "babel-node src",
+    "test": "eslint src"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.1"
   }
 }
