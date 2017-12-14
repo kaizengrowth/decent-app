@@ -8,4 +8,4 @@ class Greeter {
   }
 }
 
-module.exports = Greeter;
+export default Greeter;

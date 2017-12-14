@@ -1,4 +1,4 @@
-const Greeter = require("./Greeter");
+import Greeter from "./Greeter";
 
 const greeter = new Greeter("Hello, world!");
 
