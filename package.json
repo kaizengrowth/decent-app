@@ -7,20 +7,25 @@
   "author": "Parker McCurley <parker@decentcrypto.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn develop",
     "develop": "nodemon --ignore lib --exec babel-node src/api",
+    "build": "rimraf lib && babel src -d lib --ignore .test.js",
+    "start": "cross-env NODE_ENV=production pm2 start lib/api && pm2 logs",
+    "stop": "pm2 delete server",
     "test": "eslint src && jest --coverage",
     "precommit": "yarn test",
-    "prepush": "yarn test"
+    "prepush": "yarn test && yarn build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
     "eslint": "^4.13.1",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
-    "nodemon": "^1.13.3"
+    "nodemon": "^1.13.3",
+    "pm2": "^2.9.1",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "compression": "^1.7.1",
