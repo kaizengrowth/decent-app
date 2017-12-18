@@ -7,7 +7,8 @@
   "author": "Parker McCurley <parker@decentcrypto.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src/api",
+    "start": "yarn develop",
+    "develop": "nodemon --ignore lib --exec babel-node src/api",
     "test": "eslint src && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -18,7 +19,8 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.13.1",
     "husky": "^0.14.3",
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "nodemon": "^1.13.3"
   },
   "dependencies": {
     "compression": "^1.7.1",

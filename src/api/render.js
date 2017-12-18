@@ -1,5 +1,3 @@
-import { STATIC } from '../shared/config';
-
 const render = (title) => {
   return `<!doctype html>
   <html>
