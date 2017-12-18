@@ -7,7 +7,7 @@
   "author": "Parker McCurley <parker@decentcrypto.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/api",
     "test": "eslint src && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -19,5 +19,9 @@
     "eslint": "^4.13.1",
     "husky": "^0.14.3",
     "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2"
   }
 }
