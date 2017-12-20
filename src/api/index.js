@@ -1,20 +1,22 @@
 import express from 'express';
 import compression from 'compression';
 
-import { NAME, PORT, STATIC } from '../shared/config.js';
+import { NAME, API_PORT, STATIC_PATH } from '../shared/config.js';
+import { isProduction } from '../shared/utils.js';
 
 import render from './render';
 
-const app = express();
+const api = express();
 
-app.use(compression());
-app.use(STATIC, express.static("dist"));
-app.use(STATIC, express.static("public"));
+api.use(compression());
+api.use(STATIC_PATH, express.static("dist"));
+api.use(STATIC_PATH, express.static("public"));
 
-app.get("/", (req, res) => {
+api.get("/", (req, res) => {
   res.send(render(NAME));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}.`);
+api.listen(API_PORT, () => {
+  console.log(`Server running on port ${API_PORT}.`);
+  console.log(`Server running in ${ isProduction ? "PRODUCTION" : "DEVELOPMENT" } mode.`);
 });

@@ -1,3 +1,6 @@
+import { CONTAINER_CLASS, STATIC_PATH, APP_PORT } from '../shared/config';
+import { isProduction } from '../shared/utils';
+
 const render = (title) => {
   return `<!doctype html>
   <html>
@@ -5,7 +8,8 @@ const render = (title) => {
       <title>${title}</title>
     </head>
     <body>
-      <h1>${title}</h1>
+      <div class="${CONTAINER_CLASS}"></div>
+      <script src="${isProduction ? STATIC_PATH : `http://localhost:${APP_PORT}/dist`}/js/bundle.js"></script>
     </body>
   </html>`;
 }
