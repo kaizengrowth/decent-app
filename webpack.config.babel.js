@@ -7,7 +7,7 @@ import { isProduction } from './src/shared/utils';
 export default {
   entry: [
     "react-hot-loader/patch",
-    "./src/app"
+    "./src/client"
   ],
   output: {
     filename: "js/bundle.js",
