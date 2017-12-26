@@ -1,5 +1,9 @@
-import { CONTAINER_CLASS, STATIC_PATH, APP_PORT } from '../shared/config';
-import { isProduction } from '../shared/utils';
+import isProduction from '../shared/isProduction';
+import {
+  APP_CONTAINER_CLASS,
+  STATIC_PATH,
+  WDS_PORT
+} from '../shared/config';
 
 const render = (title) => {
   return `<!doctype html>
@@ -8,8 +12,8 @@ const render = (title) => {
       <title>${title}</title>
     </head>
     <body>
-      <div class="${CONTAINER_CLASS}"></div>
-      <script src="${isProduction ? STATIC_PATH : `http://localhost:${APP_PORT}/dist`}/js/bundle.js"></script>
+      <div class="${APP_CONTAINER_CLASS}"></div>
+      <script src="${isProduction ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/js/bundle.js"></script>
     </body>
   </html>`;
 }
