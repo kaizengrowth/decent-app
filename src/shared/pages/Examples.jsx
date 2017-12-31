@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const Examples = () => (
-  <div>
+  <div className="container mt-4">
     <Helmet
       title="Examples"
       meta={[
@@ -10,7 +10,11 @@ const Examples = () => (
         { name: "description", content: "A page to show examples."}
       ]}
     />
-    <h1>Examples</h1>
+    <div className="row">
+      <div className="col-12">
+        <h1>Examples</h1>
+      </div>
+    </div>
   </div>
 );
 

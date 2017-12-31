@@ -1,16 +1,20 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router-dom';
+
+import { HOME_ROUTE } from '../routes';
 
 const NotFound = () => (
-  <div>
-    <Helmet
-      title="Page Not Found"
-      meta={[
-        { name: "og:title", content: "Page Not Found" },
-        { name: "description", content: "decent's official boilerplate for web apps." }
-      ]}
-    />
-    <h1>Page not found</h1>
+  <div className="container mt-4">
+    <Helmet title="Page Not Found" />
+    <div className="row">
+      <div className="col-12">
+        <h1>Page Not Found</h1>
+        <div>
+          <Link to={ HOME_ROUTE }>Home</Link>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

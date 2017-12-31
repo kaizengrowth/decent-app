@@ -25,7 +25,7 @@ const render = (location, state, context) => {
       <head>
         ${head.title}
         ${head.meta}
-        <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
+        <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
       </head>
       <body>
         <div class="${APP_CONTAINER_CLASS}">${html}</div>

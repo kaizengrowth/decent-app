@@ -15,7 +15,7 @@ import {
 } from './routes';
 
 const App = () => (
-  <div>
+  <div style={{ paddingTop: 54 }}>
     <Helmet titleTemplate={ `%s | ${NAME}` } defaultTitle={ NAME } />
     <Nav />
     <Switch>
