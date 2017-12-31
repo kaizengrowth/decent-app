@@ -2,25 +2,32 @@ import 'babel-polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './App';
+import App from '../shared/App';
 import { APP_CONTAINER_SELECTOR } from '../shared/config';
 
+console.log(window.__SERVER_STATE__);
+
 ReactDOM.render(
-  <AppContainer>
-    <App />
-  </AppContainer>,
+  <BrowserRouter>
+    <AppContainer>
+      <App />
+    </AppContainer>
+  </BrowserRouter>,
   document.querySelector(APP_CONTAINER_SELECTOR)
 );
 
 if (module.hot) {
-  module.hot.accept("./App", () => {
-    const NextApp = require("./App").default;
+  module.hot.accept("../shared/App", () => {
+    const NextApp = require("../shared/App").default;
     ReactDOM.render(
-      <AppContainer>
-        <NextApp />
-      </AppContainer>,
+      <BrowserRouter>
+        <AppContainer>
+          <NextApp />
+        </AppContainer>
+      </BrowserRouter>,
       document.querySelector(APP_CONTAINER_SELECTOR)
     );
   });
