@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import Examples from './pages/Examples';
 import NotFound from './pages/NotFound';
+import Footer from './components/Footer';
 import {
   HOME_ROUTE,
   EXAMPLES_ROUTE
@@ -23,6 +24,7 @@ const App = () => (
       <Route path={ EXAMPLES_ROUTE } render={ () => ( <Examples /> ) } />
       <Route component={ NotFound } />
     </Switch>
+    <Footer />
   </div>
 );
 
