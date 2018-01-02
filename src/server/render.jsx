@@ -16,11 +16,11 @@ import {
 const render = (location, state, context = {}) => {
   const registry = new SheetsRegistry();
   const html = ReactDOMServer.renderToString(
-    <StaticRouter location={ location } context={ context }>
+    `<StaticRouter location={ location } context={ context }>
       <JssProvider registry={ registry }>
         <App />
       </JssProvider>
-    </StaticRouter>
+    </StaticRouter>`
   );
   const head = Helmet.rewind();
 

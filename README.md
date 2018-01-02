@@ -204,4 +204,3 @@ on whether the application was run via `yarn develop` or `yarn start`)
 `shared/routes.js` contains routes to be used as URLs throughout the application.
 
 Made with :heart: in Cleveland.
-
