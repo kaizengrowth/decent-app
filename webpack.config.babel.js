@@ -1,18 +1,18 @@
 import webpack from 'webpack';
 import path from 'path';
 
-import { APP_PORT } from './src/shared/config';
-import { isProduction } from './src/shared/utils';
+import isProduction from './src/shared/utils/isProduction';
+import { WDS_PORT } from './src/shared/config';
 
 export default {
   entry: [
     "react-hot-loader/patch",
-    "./src/app"
+    "./src/client"
   ],
   output: {
     filename: "js/bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: isProduction ? "/static/" : `http://localhost:${APP_PORT}/dist/`
+    publicPath: isProduction ? "/static/" : `http://localhost:${WDS_PORT}/dist/`
   },
   module: {
     rules: [
@@ -24,7 +24,7 @@ export default {
     extensions: [".js", ".jsx"]
   },
   devServer: {
-    port: APP_PORT,
+    port: WDS_PORT,
     hot: true,
     headers: {
       "Access-Control-Allow-Origin": "*"
