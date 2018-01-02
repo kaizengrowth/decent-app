@@ -1,7 +1,13 @@
 export const home = () => null;
 
 export const examples = () => ({
-  examples: {
-    message: "I'm a server-side example."
-  }
+  examples: [
+    {
+      name: "Parker",
+      email: "parker@decentcrypto.com",
+      address: {
+        city: "Cleveland"
+      }
+    }
+  ]
 });

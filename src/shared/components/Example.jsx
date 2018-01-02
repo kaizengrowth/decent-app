@@ -3,11 +3,11 @@ import injectSheet from 'react-jss';
 
 const styles = {
   example: {
-    color: "rgba(255, 255, 255, 0.5)",
     backgroundColor: "#292b2c",
     borderRadius: "5px",
-    padding: "10px",
+    color: "rgba(255, 255, 255, 0.5)",
     margin: "5px",
+    padding: "10px",
   }
 }
 

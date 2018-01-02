@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 
-import isProduction from './src/shared/isProduction';
+import isProduction from './src/shared/utils/isProduction';
 import { WDS_PORT } from './src/shared/config';
 
 export default {

@@ -52,15 +52,17 @@ const Home = injectSheet(styles)(({ classes }) => (
                 <a href="http://cssinjs.org">JSS</a> as a component CSS library
               </li>
               <li>
-                <a href="http://webpack.js.org">Webpack</a> as a module bundler and development server
+                <a href="http://webpack.js.org">Webpack</a> as a module bundler and development
+                server
               </li>
               <li>
-                <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> for dummy API data
+                <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> for dummy API
+                data
               </li>
             </ul>
             <p>
-              and many other cutting edge web technologies. It includes bitchin' features such as hot
-              module reloading and server side rendering of React components. The documentation
+              and many other cutting edge web technologies. It includes bitchin' features such as
+              hot module reloading and server side rendering of React components. The documentation
               includes plenty of references to common work patterns to get shit done fast.
             </p>
           </div>

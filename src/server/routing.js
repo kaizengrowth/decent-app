@@ -20,8 +20,8 @@ const routing = (server) => {
   });
 
   server.get("*", (req, res) => {
-    const pageNotFound = 404;
-    res.status(pageNotFound).send(render(req.url));
+    const pageNotFoundStatus = 404;
+    res.status(pageNotFoundStatus).send(render(req.url));
   });
 }
 

@@ -2,7 +2,7 @@ import express from 'express';
 import compression from 'compression';
 
 import routing from './routing';
-import isProduction from '../shared/isProduction';
+import isProduction from '../shared/utils/isProduction';
 import {
   STATIC_PATH,
   SERVER_PORT

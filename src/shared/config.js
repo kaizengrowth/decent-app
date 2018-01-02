@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 export const NAME = "decentapp";
 
 export const SERVER_PORT = process.env.PORT || 8000;

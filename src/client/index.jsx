@@ -14,26 +14,24 @@ window.jQuery = $;
 window.Tether = Tether;
 require('bootstrap');
 
-console.log(window.__SERVER_STATE__);
-
-ReactDOM.render(
+const wrapper = (element) => (
   <BrowserRouter>
     <AppContainer>
-      <App />
+      { element }
     </AppContainer>
-  </BrowserRouter>,
+  </BrowserRouter>
+);
+
+ReactDOM.render(
+  wrapper(<App />),
   document.querySelector(APP_CONTAINER_SELECTOR)
 );
 
 if (module.hot) {
   module.hot.accept("../shared/App", () => {
-    const NextApp = require("../shared/App").default;
+    const HotReloadedApp = require("../shared/App").default;
     ReactDOM.render(
-      <BrowserRouter>
-        <AppContainer>
-          <NextApp />
-        </AppContainer>
-      </BrowserRouter>,
+      wrapper(<HotReloadedApp />),
       document.querySelector(APP_CONTAINER_SELECTOR)
     );
   });

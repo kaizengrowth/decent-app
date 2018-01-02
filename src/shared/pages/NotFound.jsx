@@ -14,7 +14,9 @@ const NotFound = () => (
     </div>
     <div className="row">
       <div className="col-12">
-        <p>Whoops! The page you're looking for doesn't exist!</p>
+        <p>
+          Whoops! The page you're looking for doesn't exist!
+        </p>
         <Link to={ HOME_ROUTE }>Return Home</Link>
       </div>
     </div>

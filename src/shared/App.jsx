@@ -20,8 +20,8 @@ const App = () => (
     <Helmet titleTemplate={ `%s | ${NAME}` } defaultTitle={ NAME } />
     <Nav />
     <Switch>
-      <Route exact path={ HOME_ROUTE } render={ () => ( <Home /> ) } />
-      <Route path={ EXAMPLES_ROUTE } render={ () => ( <Examples /> ) } />
+      <Route exact path={ HOME_ROUTE } render={ () => (<Home />) } />
+      <Route path={ EXAMPLES_ROUTE } render={ () => (<Examples />) } />
       <Route component={ NotFound } />
     </Switch>
     <Footer />
