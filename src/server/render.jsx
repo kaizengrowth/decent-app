@@ -13,7 +13,7 @@ import {
   WDS_PORT
 } from '../shared/config';
 
-const Render = (location, state, context = {}) => {
+const render = (location, state, context = {}) => {
   const registry = new SheetsRegistry();
   const html = ReactDOMServer.renderToString(
     <StaticRouter location={ location } context={ context }>
