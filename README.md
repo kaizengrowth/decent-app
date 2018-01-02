@@ -136,70 +136,70 @@ controller function should be made for each route.
 
 `server/routing.js` enables server-side rendering and routing for our React application.
 
-### `shared/`
+### shared/
 
 `shared/` is a folder for isomorphic (client-side and server-side) javascripts.
 
-#### `components/`
+#### components/
 
 `shared/components/` is a folder to store React components that do not share their own route (i.e.,
 they are not an entire page of our application).
 
-##### `Example.jsx`
+##### Example.jsx
 
 `shared/components/Example.jsx` is an example of a functional component that displays input data. It
 also uses JSS for styling.
 
-##### `Footer.jsx`
+##### Footer.jsx
 
 `shared/components/Footer.jsx` is the application footer.
 
-##### `ModalExample.jsx`
+##### ModalExample.jsx
 
 `shared/components/ModalExample.jsx` is an example of a Bootstrap 4 modal.
 
-##### `Nav.jsx`
+##### Nav.jsx
 
 `shared/components/Nav.jsx` is the application navbar.
 
-#### `pages/`
+#### pages/
 
 `shared/pages/` is a folder that contains React applications that have their own routes (i.e., they
 are an entire page of our application).
 
-##### `Examples.jsx`
+##### Examples.jsx
 
 `shared/pages/Examples.jsx` is an example of a robust component class that extends the
 React.Component class. It includes an asynchronous fetch that updates the state of the component
 upon completion.
 
-##### `Home.jsx`
+##### Home.jsx
 
 `shared/pages/Home.jsx` is the application homepage.
 
-##### `NotFound.jsx`
+##### NotFound.jsx
 
 `shared/pages/NotFound.jsx` is the page displayed upon a 404 error.
 
-#### `utils/`
+#### utils/
 
 `shared/utils/` is a folder that contains any miscellaneous functions to be used around the
 application.
 
-##### `isProduction.js`
+##### isProduction.js
 
 `shared/utils/isProduction.js` contains a function that returns a boolean `true` or `false` (based
 on whether the application was run via `yarn develop` or `yarn start`)
 
-#### `App.jsx`
+#### App.jsx
 
 `shared/App.jsx` is the inner container for our React app. It also handles client-side routing.
 
-#### `config.js`
+#### config.js
 
 `shared/config.js` contains constants relevant to the configuration of our application.
 
-#### `routes.js`
+#### routes.js
 
 `shared/routes.js` contains routes to be used as URLs throughout the application.
 
