@@ -49,6 +49,9 @@ const Home = injectSheet(styles)(({ classes }) => (
               <li>
                 <a href="http://webpack.js.org">Webpack</a> as a module bundler and development server
               </li>
+              <li>
+                <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> for dummy API data
+              </li>
             </ul>
             <p>
               and many other cutting edge web technologies. It includes bitchin' features such as hot

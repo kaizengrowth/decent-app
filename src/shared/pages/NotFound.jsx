@@ -10,9 +10,12 @@ const NotFound = () => (
     <div className="row">
       <div className="col-12">
         <h1>Page Not Found</h1>
-        <div>
-          <Link to={ HOME_ROUTE }>Home</Link>
-        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-12">
+        <p>Whoops! The page you're looking for doesn't exist!</p>
+        <Link to={ HOME_ROUTE }>Return Home</Link>
       </div>
     </div>
   </div>
