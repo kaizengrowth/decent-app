@@ -75,7 +75,9 @@ const Home = injectSheet(styles)(({ classes }) => (
     <div className="container">
       <div className="row">
         <div className="col-md-6 mb-4">
-          <h3 className="mb-3">Bootstrap</h3>
+          <h3 className="mb-3">
+            <i className="fa fa-twitter"></i> Bootstrap
+          </h3>
           <p>
             This project uses Bootstrap 4 for layout and theming. Press the button below to see
             Bootstrap 4 in action.
@@ -92,7 +94,9 @@ const Home = injectSheet(styles)(({ classes }) => (
           </p>
         </div>
         <div className="col-md-6 mb-4">
-          <h3 className="mb-3">JSS</h3>
+          <h3 className="mb-3">
+            <i className="fa fa-css3"></i> JSS
+          </h3>
           <p className={ classes.hoverMe }>
             This project uses JSS for JavaScript-based styling. Hover over this paragraph to see JSS
             in action.
