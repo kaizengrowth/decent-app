@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import injectSheet from 'react-jss';
 
 import ModalExample from '../components/ModalExample';
-import { NAME } from '../config';
+import { NAME, STATIC_PATH } from '../config';
 
 const styles = {
   hoverMe: {
@@ -14,6 +14,11 @@ const styles = {
   specialButton: {
     composes: ["btn", "btn-primary"],
     backgroundColor: "limegreen"
+  },
+  decentLogo: {
+    margin: "auto",
+    marginTop: "18%",
+    display: "block"
   }
 };
 
@@ -60,6 +65,7 @@ const Home = injectSheet(styles)(({ classes }) => (
             </p>
           </div>
           <div className="col-md-6">
+            <img className={ classes.decentLogo } src={ STATIC_PATH + "/img/decent.png" } />
           </div>
         </div>
       </div>

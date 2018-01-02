@@ -30,6 +30,7 @@ const render = (location, state, context = {}) => {
       <head>
         ${head.title}
         ${head.meta}
+        <link rel="icon" type="image/png" href="${STATIC_PATH}/img/favicon.png">
         <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
         <style class=${SERVER_SIDE_JSS_CLASS}>${sheets.toString()}</style>
       </head>
