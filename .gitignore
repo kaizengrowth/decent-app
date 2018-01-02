@@ -1,0 +1,19 @@
+# Me
+TODO.md
+
+# Steve Jobs
+.DS_Store
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Node
+node_modules/
+lib/
+
+# Webpack
+dist/
+
+# Jest
+coverage/
